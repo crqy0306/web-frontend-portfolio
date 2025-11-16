@@ -1,0 +1,150 @@
+* {
+    margin:0; 
+    padding:0; 
+}
+
+body{
+    font-family:"微软雅黑"; 
+    font-size:14px; 
+}
+
+/* 头部模块样式 */
+#head {
+	width:980px; 
+	height:70px;
+	margin:0 auto; 
+	padding-top:20px;
+}
+
+
+
+/* 导航模块样式 */
+
+#nav_bg{
+    height: 48px;
+    background-color: #fe668f;
+}
+
+#nav_bg ul{
+    width: 980px;
+    margin: 0 auto;
+}
+
+#nav_bg ul li{
+    float: left;
+    list-style: none;
+}
+
+#nav_bg a{
+    /* a标签是行内元素，宽高不起效，
+    要用display: inline-block;设置为行内块元素 */
+    display: inline-block;
+    width: 132px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 16px;
+}
+
+/* 并集选择器 */
+/* 选中链接访问前和访问后的状态 */
+#nav_bg a:link ,#nav_bg a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+#nav_bg a:hover{
+    background-color: #fe9ab5;
+}
+
+#nav_bg li:last-child a{
+    background-color: #fe9ab5;
+}
+
+
+
+/* banner模块样式 */
+
+#banner{
+    width: 980px;
+    margin: 0 auto;
+}
+
+
+/* 内容模块样式 */
+
+#content{
+    width: 830px;
+    height: 934px;
+    background-image: url("../images/content_bg.jpg");
+    margin: 0 auto;
+    padding-left: 150px;
+    color: #dd8787;
+}
+
+#content h2{
+    width: 454px;
+    height: 80px;
+    line-height: 80px;
+    font-weight: normal;
+    background: url("../images/step.jpg") no-repeat right center;
+}
+
+#content form h3{
+    width: 444px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    font-weight: normal;
+    border-bottom: 1px solid #dd8787
+}
+
+#content table td{
+    height: 50px;
+}
+
+#content table td:first-child{
+    width: 120px;
+    text-align: right;
+}
+
+input.right{
+    width: 320px;
+    height: 28px;
+    border: 1px solid #dd8787;
+}
+
+#content form select{
+    border: 1px solid #dd8787;
+    width: 171px;
+    height: 28px;
+    color: #dd8787;
+}
+
+#content form textarea{
+    width: 380px;
+    height: 110px;
+    border: 1px solid #dd8787;
+    color: #aaa;
+    resize: none;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.reg_td{
+    text-align: center;
+    padding-top: 25px;
+}
+
+
+
+/* 页脚模块样式 */
+
+#footer{
+    height: 73px;
+    padding-top: 35px;
+    line-height: 25px;
+    background-color: #fe668f;
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器练习</title>
+    <style>
+
+        /*
+            请编写css代码实现以下需要：
+            1.默认状态下：头领宋江，颜色为红色;排名为奇数的英雄，文字大小24px，颜色为蓝色，无下划线；排名为偶数的英雄，文字大小24px，颜色为绿色，无下划线；
+            2.当鼠标移动到各英雄的a链接，自动出现3px宽的粉色边框；
+        */
+
+        /*
+            需注意：
+            a标签如若设置了href属性,则此a标签默认设置了文本颜色为蓝色，其继承的color属性不生效
+        */
+
+        ul li:first-child{
+            color: red;
+        }
+        
+        ul li:nth-child(2n+1){
+            color: blue;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        ul li:nth-child(2n){
+            color: green;
+            font-size: 24px;
+        }
+
+        ul a:visited{
+            text-decoration: none; 
+        }
+
+        ul a:link{
+            text-decoration: none; 
+        }
+
+        ul li a:hover{
+            border: 3px pink solid;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h2>梁山英雄排行榜</h2>
+    <ul>
+        <li><a href="https://baike.baidu.com/item/%E5%AE%8B%E6%B1%9F/7539?fr=kg_general" target="_blank">呼保义</a></li>
+        <li><a href="https://baike.baidu.com/item/%E5%8D%A2%E4%BF%8A%E4%B9%89/338586?fr=kg_general" target="_blank">玉麒麟</a></li>
+        <li><a href="https://baike.baidu.com/item/%E5%90%B4%E7%94%A8/66893?fr=kg_general" target="_blank">智多星</a></li>
+        <li><a href="https://baike.baidu.com/item/%E5%85%AC%E5%AD%99%E8%83%9C/711115?fr=kg_general" target="_blank">入云龙</a></li>
+        <li><a href="https://baike.baidu.com/item/%E5%85%B3%E8%83%9C/711293?fr=kg_general" target="_blank">大个刀</a></li>
+        <li><a href="https://baike.baidu.com/item/%E6%9E%97%E5%86%B2/22909?fr=kg_general" target="_blank">豹子头</a></li>
+    </ul>
+</body>
+</html>

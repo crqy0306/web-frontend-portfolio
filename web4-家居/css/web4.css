@@ -1,0 +1,197 @@
+body{
+    background-color: #fdfdfd;
+    font-family: "微软雅黑";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 导航模块样式 */
+
+#bg{
+    width: 1200px;
+    height: 627px;
+    margin:0 auto;
+    background-image: url("../images/bg.png");
+}
+
+#bg div{
+    width: 850px;
+    height: 50px;
+    margin: 0 auto;
+    padding-left: 150px;
+    padding-top: 50px;
+    background: url("../images/logo.png")no-repeat left center;
+    
+}
+
+#bg div a{
+    color: #685649;
+    margin: 0 30px;
+}
+
+
+#bg div a:link{
+    text-decoration: none;
+}
+
+#bg div a:visited{
+    text-decoration: none;
+}
+
+#bg div a:hover{
+    background-color: yellowgreen;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+
+
+/* #bg div a:nth-child(5)效果与#bg div a.search相同 */
+
+#bg div a:nth-child(5){
+    float: right;
+    color: #aaa;
+    font-size: 14px;
+    width: 230px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 100px;
+    padding-left: 30px;
+    background: white url("../images/f.png")no-repeat 10px center;
+}
+
+
+
+
+
+/* 推荐模块样式 */
+
+#news{
+    width: 1200px;
+    height: 455px;
+    padding-top: 120px;
+    margin: 10px auto;
+    background: url("../images/dongtai.jpg")no-repeat top center;
+}
+
+#news div{
+    float: left;
+    margin-left: 70px;
+}
+
+#news div h2{
+    width: 284px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* nth-child(2n)代表选择第偶数位 */
+/* nth-child(2n-1)代表选择第奇数位 */
+/* #news div p:nth-child(3) = #news div .p1 */
+#news div p:nth-child(3){
+    width: 284px;
+    padding-left: 10px;
+    height: 100px;
+    line-height: 25px;
+}
+
+/* #news div .p2 = #news div p:last-child */
+#news div p:last-child{
+    width: 294px;
+    height: 5px;
+    background-image: url("../images/yinying.jpg") ;
+}
+
+
+
+/* 生活模块样式 */
+
+#exhibition{
+    width:1200px ;
+    height: 400px;
+    background: #d6e4ed url("../images/shenghuo.png")no-repeat center top 20px;
+    margin: 30px auto;
+    padding-top: 150px;
+}
+
+#exhibition:hover{
+    border: 5px yellow dashed;
+}
+
+#exhibition div{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#exhibition div img{
+    margin-left: 45px;
+}
+
+
+
+
+/* 页脚模块样式 */
+
+#footer{
+    width: 1200px;
+    height: 80px;
+
+    background: url("../images/footer_bg.jpg")repeat-x;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+
+#footer ul li{
+    display: inline-block;
+    height: 35px;
+    padding-top: 10px;
+    margin: 0 30px;
+}
+
+
+#footer ul li a:visited{
+    text-decoration: none;
+    color: grey;
+}
+
+
+#footer ul li a:link{
+    color: grey;
+    text-decoration: none;
+
+}
+
+
+
+/* 悬浮框模块样式 */
+
+#tree{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+#tree img{
+    width: 175px;
+    height: 215px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
